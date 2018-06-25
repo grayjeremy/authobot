@@ -4,7 +4,7 @@ Information stored in Active Directory defines "you" with the exception of built
 The following is an unimplemented design that would provide system permissions to authenticated requestors 
 and remove the responsibility for maintaining permissions from the authentication system as well as deal with "quickly changing" permission attributes. 
 
-[iamge here]
+![alt text](https://github.com/grayjeremy/authobot/blob/master/artifacts/AuthorizationArchitecture.png "An unimplemented architecture for authorization")
 
 ## Whats the difference between Identity and a Permission?
 Identity is immutable for the lifetime of a session.  An identity is made up of a series of claims that are individual pieces of identity information such as name, email, job title, hair color, or locale.  Personally I think of this type of information as "slowly changing",  you may get promoted or change your name but it doesn't happen all the time.  There are certain instances where this information can be very valuable to an application and permissions can be inferred, like your job title being a "Doctor vs a Nurse" but that concept usually doesn't get us all the way to where we want to go.  An example of a permission, sometimes called an entitlement, could be would be "Jeremy can edit the calendar in the CRM application".
